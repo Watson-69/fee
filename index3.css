@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Antic+Slab&family=Courgette&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Lustria&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Quattrocento:wght@400;700&family=Questrial&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /* Color Palette — Low Eye Strain (Muted Earthy/Cool Tones) */
+  --primary-bg: #3b5998;        /* Muted Navy */
+  --primary-text: #f4f6f8;      /* Soft Off-White */
+  
+  --dark-bg: #1c232e;           /* Deep Charcoal Blue */
+  --dark-accent: #64b5f6;       /* Gentle Sky Blue Accent */
+  
+  --light-bg: #f3f4f6;          /* Soft Grayish Slate */
+  --light-text: #2d3748;        /* Soft Dark Slate */
+  
+  --card-bg: #ffffff;           /* Neutral White */
+  --border-color: #cbd5e1;      /* Muted Border */
+  
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100dvh;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: var(--light-bg);
+  color: var(--light-text);
+}
+
+section {
+  min-height: 100dvh;
+}
+
+/* Background Utility Classes */
+.bg1 {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+}
+
+.bg2 {
+  background-color: var(--dark-bg);
+  color: var(--dark-accent);
+}
+
+.bg3 {
+  background-color: var(--light-bg);
+  color: var(--light-text);
+}
+
+/* Flexbox Layout Utilities */
+.fx {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.fxc {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.fy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.fyc {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Boxes & Cards */
+.box1 {
+  padding: 1rem;
+  height: 8rem;
+  width: 16rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.box2 {
+  padding: 1rem;
+  height: 12rem;
+  width: 24rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.box {
+  padding: 0.5rem;
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  padding: 1rem;
+  height: 12rem;
+  width: 24rem;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: var(--shadow-md);
+}
+
+/* Border Utilities */
+.b1 {
+  border: 1px solid var(--dark-accent);
+  border-radius: 6px;
+}
+
+.b2 {
+  border: 2px solid var(--dark-accent);
+  border-radius: 6px;
+}
+
+/* Interactive Elements */
+button {
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-family: inherit;
+  border: none;
+  width: fit-content;
+  background-color: var(--primary-bg);
+  color: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.btn1 {
+  padding: 2px 6px;
+}
+
+.btn2 {
+  padding: 6px 18px;
+}
+
+.btn3 {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.btn4 {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  padding: 0;
+}
+
+button:hover {
+  outline: 2px solid var(--dark-accent);
+  opacity: 0.95;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-accent);
+  transition: border-color 0.2s ease, color 0.2s ease;
+  border-bottom: 2px solid transparent;
+}
+
+a:hover {
+  color: #80cbc4;                /* Soft pastel teal replacement */
+  border-bottom-color: #80cbc4;
+}
+
+/* Form Elements */
+input {
+  font-family: inherit;
+  width: 100%;
+  height: 36px;
+  padding: 6px 12px;
+  outline: none;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  transition: border-color 0.2s ease;
+}
+
+input:focus {
+  border-color: var(--dark-accent);
+}
+
+textarea {
+  font-family: inherit;
+  width: 100%;
+  height: 5rem;
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  line-height: 1.4;
+  outline: none;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  transition: border-color 0.2s ease;
+}
+
+textarea:focus {
+  border-color: var(--dark-accent);
+}
+
+select {
+  font-family: inherit;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+}
+
+/* Spans */
+span {
+  display: inline-block;
+  width: 7rem;
+}
+
+.sp1 {
+  width: 1rem;
+  text-align: center;
+}
+
+.sp2 {
+  width: 2rem;
+  text-align: center;
+}
+
+.sp3 {
+  width: 2rem;
+  text-align: center;
+}
+
+/* Padding Utilities */
+.p1 {
+  padding: 0.5rem;
+}
+
+.p2 {
+  padding: 1rem;
+}
+
+/* Margin Utilities */
+.mt1 {
+  margin-top: 0.5rem;
+}
+
+.mt2 {
+  margin-top: 1rem;
+}
+
+.mb1 {
+  margin-bottom: 0.5rem;
+}
+
+.mb2 {
+  margin-bottom: 1rem;
+}
+
+/* Font Size Utilities */
+.fs1 {
+  font-size: 1.1rem;
+}
+
+.fs2 {
+  font-size: 1.2rem;
+}
+
+.fs3 {
+  font-size: 1.3rem;
+}
+
+.fs4 {
+  font-size: 1.4rem;
+}
+
+.fs5 {
+  font-size: 1.5rem;
+}
+
+/* Shadows */
+.s1 {
+  box-shadow: var(--shadow-sm);
+}
+
+/* Layout Container & Media Queries */
+.c1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .c1 {
+    flex-direction: row;
+  }
+}
