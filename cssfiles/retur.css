@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding:0px;
+    box-sizing:border-box;
+}
+ body{
+    min-height:100vh;
+    background: hsl(276, 81%, 41%);
+    color:rgb(8, 231, 247);
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+/* form{
+    width:600px;
+    height:auto;
+    background-color:rgba(163, 207, 108, 0.913);
+    border-radius:10px;
+    box-shadow:10px 10px 10px 10px rgba(182, 47, 47, 0.4);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding: 16px;
+    gap: 8pxw;
+} */
+
+/* form label {
+    width: 80%;
+    text-align: left;
+}
+
+form input {
+    width: 80%;
+    padding: 8px;
+    text-align: left;
+}
+
+form button {
+    width: 80%;
+    padding: 8px;
+} */
+section{
+    background-color: rgb(35, 51, 196);
+    width: 24rem;
+    padding: 1rem;
+    border-radius: 15px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input 
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    padding: 4px 10px;
+    font-size: 1.1rem;
+    width: 100%;
+    border-radius: 14px;
+    background-color: hsl(0, 84%, 48%);
+}
+button{
+    background: burlywood;
+    color: azure;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: system-ui;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 5px;
+    border-radius: 8px;
+    transition: all 0.021s ease;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(71 139 98);
+}
+button:active{
+    transition: scale(1);
+}
