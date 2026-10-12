@@ -1,0 +1,4 @@
+go to index.html
+and there
+ <script type="module" src="/src4/main.jsx"></script> // change src4 to the required src shown in the repo
+ 
