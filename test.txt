@@ -1,0 +1,16 @@
+3 most important topics
+
+
+Components & Props:-
+Components are resuable block of UI while props are used to pass data from child components to parents components Components are  designed to perform a specific task or functions, such as displaying a form or creating a button.
+
+States in react 
+States in react allow the user to track changes in UI and allow us to re render the only changed components with the help of diffling instead of reloading the whole page this is due to react built in feature  of Virtual DOM.
+Hooks
+
+It allows us to use functional components rather than class components they help in reducing boilerplate code and example of some hooks are UseState,UseContext,UseEffect and many more.
+
+Summarized
+In React, Components & Props refer to the reusable UI blocks used in web development, while States are used to
+track changes in UI and provide efficient updates without refreshing the page. Finally, Hooks allow developers to
+use functional components and reduce boilerplate code using features like UseState, UseEffect etc.
