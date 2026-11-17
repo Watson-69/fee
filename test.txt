@@ -14,3 +14,8 @@ Summarized
 In React, Components & Props refer to the reusable UI blocks used in web development, while States are used to
 track changes in UI and provide efficient updates without refreshing the page. Finally, Hooks allow developers to
 use functional components and reduce boilerplate code using features like UseState, UseEffect etc.
+
+
+
+
+React lab topic done on Monday (16/11/2026)
