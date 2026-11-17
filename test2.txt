@@ -1,0 +1,6 @@
+Map 
+Map is a method that is use to iterate over a list of data or array  and transform each item into a JSX element for rendering and helps in DOM reconcillation.
+Summary: it Transforms arrays into JSX elements.
+Filter
+It is a feature of react in which  filter criteria is used within component state via the useState hook. During rendering, the source dataset is evaluated using JavaScript’s native .filter() method before mapping matching items to the interface, preventing redundant state synchronization.
+Summary:It Filters lists via component state.
